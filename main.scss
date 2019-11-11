@@ -1,0 +1,35 @@
+* { 
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-image: url(./images/raindrops.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#clock-container { 
+    width: 60vh;
+    height: 60vh;
+    border: rgb(192, 211, 219) 20px solid;
+    border-radius: 50%;
+    margin: 20vh auto;
+    position: relative;
+}
+
+.hand { 
+    width: 51%;
+    height: 4px;
+    background: rgb(192, 211, 219);
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.8,0,1,1);
+}
