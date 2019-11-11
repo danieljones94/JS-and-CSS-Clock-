@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
     <title>DJ Clock</title>
-</head>
-<body>
-    
-        <div id="clock-container">
-            <div id="clock-face">
-                <div class="hand" id="hour-hand"></div>
-                <div class="hand" id="minute-hand"></div>
-                <div class="hand" id="second-hand"></div>
-            </div>
-        </div>
-    
+  </head>
+  <body>
+    <section id="selection-buttons">
+      <button type="button" class="button" id="analogue">Analogue</button>
+      <button type="button" class="button" id="digital">Digital</button>
+      <button type="button" class="button" id="stop-watch">Stopwatch</button>
+    </section>
+
+    <div class="hide" id="clock-container">
+      <div id="clock-face">
+        <div class="hand" id="hour-hand"></div>
+        <div class="hand" id="minute-hand"></div>
+        <div class="hand" id="second-hand"></div>
+      </div>
+    </div>
+
+    <div id="digi-time" class="hide"></div>
+
+    <div id="stopWatch" class=" hide">
+      <div id="display">
+        00:00:00
+      </div>
+
+      <div class="buttons">
+        <button id="startStop" onclick="startStop()">Start</button>
+        <button id="reset" onclick="reset()">Reset</button>
+      </div>
+    </div>
 
     <script type="text/javascript" src="./main.js"></script>
-</body>
+  </body>
 </html>

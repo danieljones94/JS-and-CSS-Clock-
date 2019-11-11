@@ -2,8 +2,7 @@
   font-family: sans-serif;
   text-align: center;
   font-size: 24px;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -34,17 +33,36 @@ body {
   transition-timing-function: cubic-bezier(0.8, 0, 1, 1);
 }
 
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
-/*# sourceMappingURL=main.css.map */
+#ana-time {
+  color: #c0d3db;
+  font-size: 4rem;
+}
+
+#selection-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  margin: 10%;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: #c0d3db;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 5vh;
+  width: 30%;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
