@@ -1,55 +1,58 @@
 * {
-  font-family: sans-serif;
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+  text-shadow: 0 0 0.2em #f8f0f0;
+  filter: brightness(150%);
+  color: #da20cd;
   text-align: center;
   font-size: 24px;
   box-sizing: border-box;
 }
 
 body {
-  background-image: url(./images/raindrops.jfif);
+  background-image: url(./images/bricks.jpg);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
 #clock-container {
   width: 60vh;
   height: 60vh;
-  border: #c0d3db 20px solid;
+  border: #16ff01 20px solid;
+  box-shadow: 0 0 0.2em white;
+  filter: brightness(150%);
   border-radius: 50%;
-  margin: 20vh auto;
+  margin: 0 auto;
+}
+
+#clock-face {
   position: relative;
+  top: 25vh;
 }
 
 .hand {
   width: 51%;
   height: 4px;
-  background: #c0d3db;
-  position: absolute;
-  top: 50%;
+  background: #16ff01;
+  box-shadow: 0 0 0.2em white;
+  filter: brightness(150%);
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.8, 0, 1, 1);
 }
 
-#ana-time {
-  color: #c0d3db;
-  font-size: 4rem;
-}
-
 #selection-buttons {
   display: flex;
-  flex-direction: column;
-  height: 30vh;
-  margin: 10%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  height: 20vh;
 }
 
 .button {
   background-color: transparent;
   border: none;
-  color: #c0d3db;
-  font-weight: bold;
   font-size: 1.5em;
   padding: 5vh;
   width: 30%;
@@ -57,6 +60,37 @@ body {
 
 .button:hover {
   cursor: pointer;
+}
+
+#digi-time {
+  font-size: 5em;
+  padding: 10vh;
+  color: #16ff01;
+}
+
+#stopWatch {
+  padding: 10vh;
+}
+
+#display {
+  font-size: 2em;
+  color: #16ff01;
+  text-shadow: 0 0 0.2em #f8f0f0;
+  filter: brightness(150%);
+}
+
+#startStop,
+#reset {
+  background-color: transparent;
+  font-size: 2em;
+  border: none;
+  color: #16ff01;
+  text-shadow: 0 0 0.2em #f8f0f0;
+  filter: brightness(150%);
+}
+
+#message h2 {
+  font-size: 2em;
 }
 
 .hide {
