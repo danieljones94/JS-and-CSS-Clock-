@@ -1,0 +1,97 @@
+* {
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+  text-shadow: 0 0 0.2em rgb(248, 240, 240);
+  filter: brightness(150%);
+  color: rgb(218, 32, 205);
+  text-align: center;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/bricks.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#clock-container {
+  width: 60vh;
+  height: 60vh;
+  border: rgb(22, 255, 1) 20px solid;
+  box-shadow: 0 0 0.2em rgb(255, 255, 255);
+  filter: brightness(150%);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#clock-face {
+  position: relative;
+  top: 25vh;
+}
+.hand {
+  width: 51%;
+  height: 4px;
+  background: rgb(22, 255, 1);
+  box-shadow: 0 0 0.2em rgb(255, 255, 255);
+  filter: brightness(150%);
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.8, 0, 1, 1);
+}
+
+#selection-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  height: 20vh;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  padding: 5vh;
+  width: 30%;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+#digi-time {
+  font-size: 5em;
+  padding: 10vh;
+  color: rgb(22, 255, 1);
+}
+
+#stopWatch {
+  padding: 10vh;
+}
+
+#display {
+  font-size: 2em;
+  color: rgb(22, 255, 1);
+  text-shadow: 0 0 0.2em rgb(248, 240, 240);
+  filter: brightness(150%);
+}
+
+#startStop,
+#reset {
+  background-color: transparent;
+  font-size: 2em;
+  border: none;
+  color: rgb(22, 255, 1);
+  text-shadow: 0 0 0.2em rgb(248, 240, 240);
+  filter: brightness(150%);
+}
+
+#message h2 {
+  font-size: 2em;
+}
+
+.hide {
+  display: none;
+}
